@@ -18,7 +18,7 @@ public class Koneksi {
     private static Connection connect;
     public static Connection ConnectDB() throws SQLException{
         try {
-            String DB = "jdbc:mysql://localhost/db_library";
+            String DB = "jdbc:mysql://localhost/tb_library";
             String user = "root";   
             String pass = "";
             

@@ -75,39 +75,39 @@ public class Register extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel2.setForeground(java.awt.Color.white);
-        jLabel2.setText("Username :");
+        jLabel2.setText("Username");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(200, 130, 72, 17);
+        jLabel2.setBounds(220, 130, 72, 17);
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
-        jLabel3.setText("Nama :");
+        jLabel3.setText("Nama");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 130, 44, 17);
+        jLabel3.setBounds(30, 130, 36, 17);
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel4.setForeground(java.awt.Color.white);
-        jLabel4.setText("Kelas :");
+        jLabel4.setText("Kelas");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 290, 43, 17);
+        jLabel4.setBounds(30, 290, 35, 17);
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setForeground(java.awt.Color.white);
-        jLabel5.setText("Nim :");
+        jLabel5.setText("Nim");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 210, 31, 17);
+        jLabel5.setBounds(30, 210, 23, 17);
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(java.awt.Color.white);
-        jLabel6.setText("Password :");
+        jLabel6.setText("Password");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(200, 200, 69, 30);
+        jLabel6.setBounds(220, 210, 90, 20);
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel7.setForeground(java.awt.Color.white);
-        jLabel7.setText("Re-Password :");
+        jLabel7.setText("Re-Password");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(200, 290, 92, 17);
+        jLabel7.setBounds(220, 290, 120, 17);
 
         btnLogin1.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnLogin1.setText("LOGIN");
@@ -119,9 +119,11 @@ public class Register extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnLogin1);
-        btnLogin1.setBounds(140, 360, 72, 30);
+        btnLogin1.setBounds(140, 420, 110, 30);
 
+        btnRegister1.setBackground(new java.awt.Color(8, 138, 27));
         btnRegister1.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
+        btnRegister1.setForeground(new java.awt.Color(255, 255, 255));
         btnRegister1.setText("REGISTER");
         btnRegister1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,23 +131,23 @@ public class Register extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnRegister1);
-        btnRegister1.setBounds(120, 400, 110, 30);
+        btnRegister1.setBounds(140, 370, 110, 30);
 
         txtKelas.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanel1.add(txtKelas);
-        txtKelas.setBounds(10, 310, 150, 30);
+        txtKelas.setBounds(30, 310, 150, 30);
 
         txtNim.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanel1.add(txtNim);
-        txtNim.setBounds(10, 230, 150, 30);
+        txtNim.setBounds(30, 230, 150, 30);
 
         txtNama.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanel1.add(txtNama);
-        txtNama.setBounds(10, 150, 150, 30);
+        txtNama.setBounds(30, 150, 150, 30);
 
         txtUsername.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanel1.add(txtUsername);
-        txtUsername.setBounds(200, 150, 150, 30);
+        txtUsername.setBounds(220, 150, 150, 30);
 
         txtRepassword.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtRepassword.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +156,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtRepassword);
-        txtRepassword.setBounds(200, 310, 150, 30);
+        txtRepassword.setBounds(220, 310, 150, 30);
 
         txtPassword.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtPassword.addActionListener(new java.awt.event.ActionListener() {
@@ -163,40 +165,40 @@ public class Register extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtPassword);
-        txtPassword.setBounds(200, 230, 150, 30);
+        txtPassword.setBounds(220, 230, 150, 30);
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
         jPanel2.setPreferredSize(new java.awt.Dimension(360, 40));
         jPanel2.setLayout(null);
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(0, 0, 360, 40);
+        jPanel2.setBounds(0, 0, 400, 40);
 
         jLabel8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("HELLO !");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(100, 50, 170, 30);
+        jLabel8.setBounds(0, 50, 400, 30);
 
         jLabel9.setFont(new java.awt.Font("Segoe Print", 0, 11)); // NOI18N
         jLabel9.setForeground(java.awt.Color.white);
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Please insert your data :");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(100, 90, 170, 20);
+        jLabel9.setBounds(0, 90, 400, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(414, 507));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

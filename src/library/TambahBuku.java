@@ -56,6 +56,7 @@ public class TambahBuku extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(400, 500));
 
         jPanel1.setBackground(new java.awt.Color(44, 62, 80));
         jPanel1.setMinimumSize(new java.awt.Dimension(360, 400));
@@ -88,21 +89,21 @@ public class TambahBuku extends javax.swing.JFrame {
                 btnMenu1ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 70, 30));
-        jPanel1.add(txtNamaBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 140, 30));
-        jPanel1.add(txtPengarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 140, 30));
-        jPanel1.add(txtStokBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 140, 30));
+        jPanel1.add(btnMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 100, 30));
+        jPanel1.add(txtNamaBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 160, 30));
+        jPanel1.add(txtPengarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 160, 30));
+        jPanel1.add(txtStokBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 160, 30));
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
         jPanel2.setPreferredSize(new java.awt.Dimension(360, 40));
         jPanel2.setLayout(null);
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
 
         jLabel8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("TAMBAH BUKU");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, 30));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 400, 30));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
@@ -120,28 +121,30 @@ public class TambahBuku extends javax.swing.JFrame {
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/download-removebg-preview.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe Print", 0, 11)); // NOI18N
         jLabel4.setForeground(java.awt.Color.white);
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("\"Read to discover new things.\"");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, 220, 60));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 220, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 454, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(415, 507));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

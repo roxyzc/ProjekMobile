@@ -38,6 +38,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(400, 500));
 
         jPanel1.setBackground(new java.awt.Color(44, 62, 80));
         jPanel1.setPreferredSize(new java.awt.Dimension(360, 400));
@@ -56,7 +57,7 @@ public class Menu extends javax.swing.JFrame {
                 btnPinjamBukuActionPerformed(evt);
             }
         });
-        jPanel1.add(btnPinjamBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 110, 30));
+        jPanel1.add(btnPinjamBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 130, 30));
 
         btnTambahBuku.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnTambahBuku.setText("Tambah buku");
@@ -70,7 +71,7 @@ public class Menu extends javax.swing.JFrame {
                 btnTambahBukuActionPerformed(evt);
             }
         });
-        jPanel1.add(btnTambahBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 110, 30));
+        jPanel1.add(btnTambahBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 130, 30));
 
         btnKembalikanBuku.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnKembalikanBuku.setText("Kembalikan buku");
@@ -99,12 +100,12 @@ public class Menu extends javax.swing.JFrame {
                 btnProfilMActionPerformed(evt);
             }
         });
-        jPanel1.add(btnProfilM, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 110, 30));
+        jPanel1.add(btnProfilM, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 130, 30));
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
         jPanel2.setPreferredSize(new java.awt.Dimension(360, 40));
         jPanel2.setLayout(null);
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
 
         jLabel3.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
@@ -122,22 +123,20 @@ public class Menu extends javax.swing.JFrame {
         jLabel4.setForeground(java.awt.Color.white);
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("\"Read to discover new things.\"");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 220, 60));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 220, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 510, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(414, 517));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -75,11 +75,12 @@ public class PinjamBuku extends javax.swing.JFrame {
         TableBuku = new javax.swing.JTable();
         btnMenuP = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(400, 500));
 
         jPanel1.setBackground(new java.awt.Color(44, 62, 80));
         jPanel1.setMinimumSize(new java.awt.Dimension(360, 400));
@@ -94,8 +95,8 @@ public class PinjamBuku extends javax.swing.JFrame {
                 btnPinjamActionPerformed(evt);
             }
         });
-        jPanel1.add(btnPinjam, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 280, 70, 30));
-        jPanel1.add(txtNoBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 160, 30));
+        jPanel1.add(btnPinjam, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, 90, 30));
+        jPanel1.add(txtNoBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 180, 30));
 
         TableBuku.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         TableBuku.setModel(new javax.swing.table.DefaultTableModel(
@@ -147,7 +148,7 @@ public class PinjamBuku extends javax.swing.JFrame {
             TableBuku.getColumnModel().getColumn(3).setPreferredWidth(20);
         }
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 340, 110));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 360, 110));
 
         btnMenuP.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnMenuP.setText("MENU");
@@ -157,41 +158,43 @@ public class PinjamBuku extends javax.swing.JFrame {
                 btnMenuPActionPerformed(evt);
             }
         });
-        jPanel1.add(btnMenuP, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 70, 30));
+        jPanel1.add(btnMenuP, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, 90, 30));
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
         jPanel2.setPreferredSize(new java.awt.Dimension(360, 40));
         jPanel2.setLayout(null);
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 50));
+
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel6.setForeground(java.awt.Color.white);
+        jLabel6.setText("List Buku :");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel7.setForeground(java.awt.Color.white);
+        jLabel7.setText("No Buku :");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 70, 30));
 
         jLabel8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("PINJAM BUKU");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, 30));
-
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel6.setForeground(java.awt.Color.white);
-        jLabel6.setText("List Buku :");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel7.setForeground(java.awt.Color.white);
-        jLabel7.setText("No Buku :");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 200, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(415, 468));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

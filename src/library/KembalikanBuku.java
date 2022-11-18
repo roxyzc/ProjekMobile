@@ -82,6 +82,18 @@ public class KembalikanBuku extends javax.swing.JFrame {
                     }
                 }
                 System.out.println("Data buku Berhasil di tampilkan...");
+            }else{
+                Object[] columnTitle = {"No","Nama","Pengarang","Jumlah"};
+                tableModel = new DefaultTableModel(null,columnTitle);
+                TableKembalikan.setModel(tableModel);                
+                tableModel.getDataVector().removeAllElements();
+                 Object[] data = {
+                    null,
+                    null,
+                    null,
+                    null
+                };
+                tableModel.addRow(data);
             }
         } catch (SQLException e) {
             System.out.println("Data buku Gagal di tampilkan...");
@@ -111,9 +123,10 @@ public class KembalikanBuku extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(400, 500));
 
         jPanel1.setBackground(new java.awt.Color(44, 62, 80));
-        jPanel1.setMinimumSize(new java.awt.Dimension(360, 400));
+        jPanel1.setMinimumSize(new java.awt.Dimension(500, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(360, 400));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -133,7 +146,7 @@ public class KembalikanBuku extends javax.swing.JFrame {
                 btnMenu3ActionPerformed(evt);
             }
         });
-        jPanel1.add(btnMenu3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 390, 70, 30));
+        jPanel1.add(btnMenu3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 90, 30));
 
         btnKembalikan.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnKembalikan.setText("Kembalikan");
@@ -142,9 +155,15 @@ public class KembalikanBuku extends javax.swing.JFrame {
                 btnKembalikanActionPerformed(evt);
             }
         });
-        jPanel1.add(btnKembalikan, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 350, -1, 30));
-        jPanel1.add(txtNoBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 190, 30));
-        jPanel1.add(txtJmlBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 190, 30));
+        jPanel1.add(btnKembalikan, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, -1, 30));
+
+        txtNoBuku.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNoBukuActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtNoBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 190, 30));
+        jPanel1.add(txtJmlBuku, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 190, 30));
 
         TableKembalikan.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 12)); // NOI18N
         TableKembalikan.setModel(new javax.swing.table.DefaultTableModel(
@@ -190,36 +209,36 @@ public class KembalikanBuku extends javax.swing.JFrame {
             TableKembalikan.getColumnModel().getColumn(0).setPreferredWidth(20);
         }
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 340, 110));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 350, 110));
 
         jLabel8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 18)); // NOI18N
         jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("KEMBALIKAN BUKU");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, 30));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, 30));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel7.setForeground(java.awt.Color.white);
-        jLabel7.setText("No Buku :");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 90, -1));
+        jLabel7.setText("No Buku");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 60, 30));
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel9.setForeground(java.awt.Color.white);
-        jLabel9.setText("Jumlah Buku :");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 90, -1));
+        jLabel9.setText("Jumlah Buku");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 90, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(414, 487));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -280,8 +299,8 @@ public class KembalikanBuku extends javax.swing.JFrame {
                         prss.execute();
                         System.out.println("Buku Berhasil dikembalikan...");
                         JOptionPane.showMessageDialog(null, "Success...  Buku Berhasil dikembalikan!", "Success", JOptionPane.INFORMATION_MESSAGE);
-                        clearTxt();
                         showTableBuku();
+                        clearTxt();
                     }else{
                         String update = "UPDATE `tb_peminjam` SET `jumlah_bk`='"+ (Integer.parseInt(Ajumlah) - Integer.parseInt(jml_buku)) +"' WHERE `no_bk`='"+ no_buku +"'";
                         PreparedStatement prs = conn.prepareStatement(update);
@@ -292,8 +311,8 @@ public class KembalikanBuku extends javax.swing.JFrame {
                         prss.execute();
                         System.out.println("Buku Berhasil dikembalikan...");
                         JOptionPane.showMessageDialog(null, "Success...  Buku Berhasil dikembalikan!", "Success", JOptionPane.INFORMATION_MESSAGE);
-                        clearTxt();
                         showTableBuku();
+                        clearTxt();
                     }
                 }
             }
@@ -305,6 +324,10 @@ public class KembalikanBuku extends javax.swing.JFrame {
             System.out.println(e);
         }
     }//GEN-LAST:event_btnKembalikanActionPerformed
+
+    private void txtNoBukuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNoBukuActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNoBukuActionPerformed
 
     /**
      * @param args the command line arguments

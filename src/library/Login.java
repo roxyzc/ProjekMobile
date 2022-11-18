@@ -49,9 +49,11 @@ public class Login extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new java.awt.GridLayout());
+        setMinimumSize(new java.awt.Dimension(400, 500));
+        getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
         jPanel1.setBackground(new java.awt.Color(44, 62, 80));
+        jPanel1.setMinimumSize(new java.awt.Dimension(500, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(360, 400));
         jPanel1.setLayout(null);
 
@@ -60,14 +62,14 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Username ");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(40, 190, 90, 40);
+        jLabel2.setBounds(40, 190, 90, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(java.awt.Color.white);
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel6.setText("Password");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(50, 240, 70, 24);
+        jLabel6.setBounds(50, 230, 80, 30);
 
         btnRegister2.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnRegister2.setText("REGISTER");
@@ -77,7 +79,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnRegister2);
-        btnRegister2.setBounds(130, 350, 90, 30);
+        btnRegister2.setBounds(160, 320, 90, 30);
 
         btnLogin2.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
         btnLogin2.setText("LOGIN");
@@ -87,7 +89,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnLogin2);
-        btnLogin2.setBounds(140, 300, 70, 30);
+        btnLogin2.setBounds(160, 280, 90, 30);
 
         txtUsername2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         txtUsername2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
@@ -97,29 +99,30 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtUsername2);
-        txtUsername2.setBounds(160, 190, 150, 30);
+        txtUsername2.setBounds(130, 190, 160, 30);
         jPanel1.add(txtPassword2);
-        txtPassword2.setBounds(160, 230, 150, 30);
+        txtPassword2.setBounds(130, 230, 160, 30);
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
         jPanel2.setPreferredSize(new java.awt.Dimension(360, 40));
         jPanel2.setLayout(null);
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(0, 0, 360, 40);
 
         jLabel3.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("WELCOME");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 70, 170, 30);
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(120, 50, 170, 30);
+
+        jPanel1.add(jPanel2);
+        jPanel2.setBounds(0, 0, 410, 90);
 
         jLabel4.setFont(new java.awt.Font("Segoe Print", 0, 11)); // NOI18N
         jLabel4.setForeground(java.awt.Color.white);
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Please insert your username and password");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(60, 110, 250, 20);
+        jLabel4.setBounds(80, 90, 250, 20);
 
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/perpus-removebg-preview.png"))); // NOI18N
@@ -130,7 +133,7 @@ public class Login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1);
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(416, 501));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

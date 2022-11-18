@@ -98,7 +98,7 @@ public final class Profile extends javax.swing.JFrame {
                 btnMenuPActionPerformed(evt);
             }
         });
-        jPanel8.add(btnMenuP, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 80, 30));
+        jPanel8.add(btnMenuP, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, 100, 30));
 
         btnUpdateP.setBackground(new java.awt.Color(8, 138, 27));
         btnUpdateP.setFont(new java.awt.Font("Open Sans SemiCondensed", 1, 11)); // NOI18N
@@ -109,57 +109,57 @@ public final class Profile extends javax.swing.JFrame {
                 btnUpdatePActionPerformed(evt);
             }
         });
-        jPanel8.add(btnUpdateP, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 380, 100, 30));
-        jPanel8.add(txtKelasP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 130, 30));
-        jPanel8.add(txtNimP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, 130, 30));
-        jPanel8.add(txtNamaP, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 130, 30));
+        jPanel8.add(btnUpdateP, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 100, 30));
+        jPanel8.add(txtKelasP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 150, 30));
+        jPanel8.add(txtNimP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 150, 30));
+        jPanel8.add(txtNamaP, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 150, 30));
 
         txtRepasswordP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRepasswordPActionPerformed(evt);
             }
         });
-        jPanel8.add(txtRepasswordP, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 130, 30));
+        jPanel8.add(txtRepasswordP, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 150, 30));
 
         txtPasswordBaruP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPasswordBaruPActionPerformed(evt);
             }
         });
-        jPanel8.add(txtPasswordBaruP, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 130, 30));
+        jPanel8.add(txtPasswordBaruP, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 150, 30));
 
         txtPasswordLamaP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPasswordLamaPActionPerformed(evt);
             }
         });
-        jPanel8.add(txtPasswordLamaP, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 130, 30));
+        jPanel8.add(txtPasswordLamaP, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 150, 30));
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
         jPanel2.setPreferredSize(new java.awt.Dimension(360, 40));
         jPanel2.setLayout(null);
-        jPanel8.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel8.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, -1));
 
         jLabel8.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 24)); // NOI18N
         jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("PROFILE");
-        jPanel8.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, 30));
+        jPanel8.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, -1, 30));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel3.setForeground(java.awt.Color.white);
-        jLabel3.setText("Nama :");
-        jPanel8.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+        jLabel3.setText("Nama");
+        jPanel8.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setForeground(java.awt.Color.white);
-        jLabel5.setText("Nim :");
-        jPanel8.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
+        jLabel5.setText("Nim");
+        jPanel8.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel4.setForeground(java.awt.Color.white);
-        jLabel4.setText("Kelas :");
-        jPanel8.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+        jLabel4.setText("Kelas");
+        jPanel8.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(java.awt.Color.white);
@@ -168,26 +168,30 @@ public final class Profile extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel7.setForeground(java.awt.Color.white);
-        jLabel7.setText("Password lama :");
+        jLabel7.setText("Password lama");
         jPanel8.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel9.setForeground(java.awt.Color.white);
-        jLabel9.setText("Password baru :");
+        jLabel9.setText("Password baru");
         jPanel8.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(376, 468));
+        setSize(new java.awt.Dimension(414, 507));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -206,8 +210,14 @@ public final class Profile extends javax.swing.JFrame {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(query);
             String Apassword = null;
+            String ANama = null;
+            String ANim = null;
+            String AKelas = null;
             while(rs.next()){
                 Apassword = rs.getString("password");
+                ANama = rs.getString("nama");
+                ANim = rs.getString("nim");
+                AKelas = rs.getString("kelas");
             }
             
             String nama = txtNamaP.getText();
@@ -216,8 +226,10 @@ public final class Profile extends javax.swing.JFrame {
             String passwordLama = txtPasswordLamaP.getText();
             String passwordBaru = txtPasswordBaruP.getText();
             String repassword = txtRepasswordP.getText();
-            
-            if(nama.isEmpty() && nim.isEmpty() && kelas.isEmpty() && passwordLama.isEmpty() && passwordBaru.isEmpty() && repassword.isEmpty()){
+           
+            if(nama.equals(ANama) && nim.equals(ANim) && kelas.equals(AKelas)){
+                JOptionPane.showMessageDialog(null, "Invalid", "Warning", JOptionPane.ERROR_MESSAGE);
+            }else if(nama.isEmpty() && nim.isEmpty() && kelas.isEmpty() && passwordLama.isEmpty() && passwordBaru.isEmpty() && repassword.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Oopss.. Data harus diisi semua!", "Warning", JOptionPane.ERROR_MESSAGE);
             }else if((nama.isBlank() || (nama.length() < 6 == true)) || (nim.isBlank() || (nim.length() < 6 == true)) || (kelas.isBlank() || (kelas.length() < 6 == true))){ 
                 clear();
