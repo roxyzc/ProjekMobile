@@ -227,7 +227,7 @@ public final class Profile extends javax.swing.JFrame {
             String passwordBaru = txtPasswordBaruP.getText();
             String repassword = txtRepasswordP.getText();
            
-            if(nama.equals(ANama) && nim.equals(ANim) && kelas.equals(AKelas)){
+            if(nama.equals(ANama) && nim.equals(ANim) && kelas.equals(AKelas) && passwordLama.isEmpty() && passwordBaru.isEmpty() && repassword.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Invalid", "Warning", JOptionPane.ERROR_MESSAGE);
             }else if(nama.isEmpty() && nim.isEmpty() && kelas.isEmpty() && passwordLama.isEmpty() && passwordBaru.isEmpty() && repassword.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Oopss.. Data harus diisi semua!", "Warning", JOptionPane.ERROR_MESSAGE);
